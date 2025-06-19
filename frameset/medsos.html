@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>List Medsos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .medsos-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .medsos-container a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .medsos-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .medsos-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .medsos-label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>List Medsos</h2>
+  <div class="medsos-container">
+    <a href="https://wa.me/6281234567890" target="_blank">
+      <img src="whatsapp.png" alt="WhatsApp">
+      <div class="medsos-label">WhatsApp</div>
+    </a>
+    <a href="https://www.instagram.com/username" target="_blank">
+      <img src="ig.jpg" alt="Instagram">
+      <div class="medsos-label">Instagram</div>
+    </a>
+    <a href="https://ww.facebook.com/profile" target="_blank">
+        <img src="Facebook.png" alt="Facebook">
+        <div class="medsos-label">Facebook</div>
+    </a>
+  </div>
+</body>
+</html>

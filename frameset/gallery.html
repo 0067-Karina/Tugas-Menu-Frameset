@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Gambar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-caption {
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galeri Meong</h1>
+
+  <div class="gallery-container">
+
+    <div class="gallery-item">
+      <img src="kucing bengal.jpeg" alt="Kucing Bengal">
+      <div class="gallery-caption">Kucing Bengal</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing akmal.jpg" alt="Kucing akmal">
+      <div class="gallery-caption">Kucing Akmal</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing munchkin.jpg" alt="Kucing Munchkin">
+      <div class="gallery-caption">Kucing Munchkin</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing oyen.jpg" alt="Kucing Oyen">
+      <div class="gallery-caption">Kucing Oyen</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing mujaer.jpg" alt="Kucing Mujaer">
+      <div class="gallery-caption">Kucing Mujaer</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing putih.jpg" alt="Kucing Putih">
+      <div class="gallery-caption">Kucing Putih</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing kembang telon.jpg" alt="Kucing Kembang Telon">
+      <div class="gallery-caption">Kucing Kembang Telon</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kucing maine coon.jpg" alt="Maine coon">
+      <div class="gallery-caption">Kucing Maine Coon</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
